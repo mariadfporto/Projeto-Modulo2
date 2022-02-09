@@ -17,10 +17,10 @@
 
 | Cor               | Hexadecimal                                                |
 | ----------------- | ---------------------------------------------------------------- |
-| Cor exemplo       | ![#FFBF00](https://via.placeholder.com/10/0a192f?text=+) #FFBF00 |
-| Cor exemplo       | ![#F2A50C](https://via.placeholder.com/10/f8f8f8?text=+) #F2A50C |
-| Cor exemplo       | ![#FFFFFF](https://via.placeholder.com/10/00b48a?text=+) #FFFFFF |
-| Cor exemplo       | ![#B2B2B2](https://via.placeholder.com/10/00b48a?text=+) #B2B2B2 |
+| Cor exemplo       | ![#FFBF00](https://via.placeholder.com/10/FFBF00?text=+) #FFBF00 |
+| Cor exemplo       | ![#F2A50C](https://via.placeholder.com/10/F2A50C?text=+) #F2A50C |
+| Cor exemplo       | ![#FFFFFF](https://via.placeholder.com/10/FFFFFF?text=+) #FFFFFF |
+| Cor exemplo       | ![#B2B2B2](https://via.placeholder.com/10/B2B2B2?text=+) #B2B2B2 |
 
 
 ## Feedback
