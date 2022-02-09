@@ -17,10 +17,10 @@
 
 | Cor               | Hexadecimal                                                |
 | ----------------- | ---------------------------------------------------------------- |
-| Cor exemplo       | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) #0a192f |
-| Cor exemplo       | ![#f8f8f8](https://via.placeholder.com/10/f8f8f8?text=+) #f8f8f8 |
-| Cor exemplo       | ![#00b48a](https://via.placeholder.com/10/00b48a?text=+) #00b48a |
-| Cor exemplo       | ![#00d1a0](https://via.placeholder.com/10/00b48a?text=+) #00d1a0 |
+| Cor exemplo       | ![#FFBF00](https://via.placeholder.com/10/0a192f?text=+) #FFBF00 |
+| Cor exemplo       | ![#F2A50C](https://via.placeholder.com/10/f8f8f8?text=+) #F2A50C |
+| Cor exemplo       | ![#FFFFFF](https://via.placeholder.com/10/00b48a?text=+) #FFFFFF |
+| Cor exemplo       | ![#B2B2B2](https://via.placeholder.com/10/00b48a?text=+) #B2B2B2 |
 
 
 ## Feedback
@@ -28,5 +28,5 @@
 Se você tiver algum feedback, por favor nos deixe saber por meio de desenvolvedoresfrontend@gmail.com
 
 
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
+![Logo](https://i.ibb.co/yRMtgBh/logo.png)
 
