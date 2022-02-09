@@ -4,12 +4,14 @@
 3 - Para o header, utilizei o flexbox, para o footer o grid.
 4 - Toda a home está responsiva. Se vocês tiverem dúvidas ou não saberem deixar responsivo, fala comigo.
 5 - A fonte utilizada padrão é a Arial, e a primária é a Poppins. Estão em rem, se não souberem converter, deixa em px mesmo. 
-6 - Qualquer dúvida, estou a disposição. beiiijooosssss */
+6 - Qualquer dúvida, estou a disposição. beiiijooosssss 
+7 - Fundo do corpo (quase-preto): #111111;
+8 - Cor amarelo: #FFBB00;*/
+
 
 body {
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
-    color: #000000;
   }
   
   h1,
@@ -80,6 +82,7 @@ body {
     position: relative;
     color: #ffffff;
     font: 400 1.125rem/1.35 "Poppins", sans-serif;
+    text-decoration: none;
   }
   
   .header-menu a:after {
@@ -109,6 +112,7 @@ body {
     }
     .header-menu a:hover {
       background-color: #000000;
+      
     }
     .header a:after {
       display: none;
@@ -211,7 +215,142 @@ body {
   }
 
   /* Estilo do conteúdo principal */
-  .main {
-    background-color: white;
+  .topo {
+      background-color: #111111;
+      padding: 2rem;
+      color: #9c9c9c;
+      font-family: "Roboto";
   }
-  
+
+  .topo > img {
+      max-width: 50vw;
+  }
+
+  .botao-amarelo {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    height: 40px;
+    width: 250px;
+  }
+
+  #titulo-card {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .icone {
+      width: 40px;
+      height: auto;
+  }
+
+  .card {
+    background-color: black;
+  }
+
+  .card .fa-solid {
+    color: #FFBB00;
+  }
+
+  .card > h3 {
+    font-size: 15px;
+    color: white;
+    font-weight: 600;
+  }
+
+  .card .text-white {
+    font-size: 12px;
+  }
+
+  .planos {
+    min-height: 40vh;
+    padding-top: 70px;
+    padding: 2rem;
+  }
+
+  .titulo-semi-amarelo {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+  }
+
+  .titulo-semi-amarelo::after {
+    content: ".";
+    color: #FFBB00;
+  }
+
+  .curso {
+    background-color: #111111;
+    color: #9c9c9c;
+    padding: 2rem;
+    margin-bottom: -8%;
+  }
+
+  .curso h1 {
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+  }
+
+  .curso h1::after {
+    content: "curso.";
+    color: #FFBB00;
+  }
+
+  .imagem-sobreposta {
+    position: relative;
+    top: -50px;
+    z-index: 2;
+  }
+
+  @media (max-width: 1140px) {
+    .curso {
+     padding-bottom: 1rem;
+     margin-bottom: auto;
+    }
+    
+  }
+
+  .experts {
+    padding: 2rem;
+  }
+
+  .nome-expert {
+    color: #FFBB00;
+    font-weight: 600;
+  }
+
+  .foto-expert {
+    border-radius: 50%;
+  }
+
+  .grid-cursos {
+    background-color: #111111;
+    padding: 2rem;
+  }
+
+  .grid-cursos > h1 {
+    color: white;
+  }
+
+  .faq {
+    background-color: white;
+    padding: 2rem;
+    padding-top: 70px;
+  }
+
+  .grid-cursos-menor {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    font-size: 100px;
+    gap: 30px;
+  }
+
+  @media (max-width: 800px) {
+    .grid-cursos-menor {
+      display: flex;
+      flex-direction: column;
+    }
+  }
