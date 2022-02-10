@@ -301,6 +301,7 @@ body {
   .form-main {
     background-color: white;
     padding: 1rem;
+    padding-top: 2rem;
     min-width: 100%;
     font-weight: bold;
     font-family: "Poppins";
@@ -332,18 +333,6 @@ body {
     color: white;
   }
 
-.card-titulo {
-  background-color: #2e2e2e;
-}
-
-.opcao-card {
-  border: none;
-}
-
-.opcao-card .card-body {
-  color:#2e2e2e;
-}
-
 .checkbox-customizada {
   width: 1.4rem;
   height: 1.4rem;
@@ -354,4 +343,12 @@ body {
   display: flex;
   justify-content: center;
 }
- 
+
+.card {
+  color: #2e2e2e;
+}
+
+.botao-grande {
+  /* display: none; */
+  background-color: #2e2e2e;
+}
