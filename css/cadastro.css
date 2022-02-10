@@ -245,8 +245,15 @@ body {
   .container-form {
     height: auto;
     position: relative;
-    top: -200px;
+    top: -300px;
+    margin: 5rem;
+    margin-bottom: 1rem;
+  }
 
+  @media (max-width: 800px) {
+    .container-form {
+      margin: 0;
+    }
   }
 
   .topo-transparente {
@@ -268,7 +275,8 @@ body {
 
   .enchimento-branco {
     background-color: white;
-    min-height: 120vh;
+    margin: 0;
+    padding: 0;
   }
 
   .sidebar-preto {
@@ -292,10 +300,7 @@ body {
 
   .form-main {
     background-color: white;
-    /* border-radius: 2%; */
     padding: 1rem;
-    /* border-radius: 0 1% 1% 0; */
-    /* min-width: 40%; */
     min-width: 100%;
     font-weight: bold;
     font-family: "Poppins";
@@ -345,4 +350,8 @@ body {
   border: 1px solid #2e2e2e;
 }
 
+.linha-botao {
+  display: flex;
+  justify-content: center;
+}
  
