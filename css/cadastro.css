@@ -141,6 +141,9 @@ body {
     gap: 40px;
     padding-top: 60px;
     padding-bottom: 60px;
+    /* position: absolute;
+    bottom: 0; */
+    /* z-index: 2; */
   }
 
   .footer a:hover {
@@ -236,18 +239,14 @@ body {
     background-color: #111111;
     min-height: 60vh;
     color: white;
+    z-index: -1;
   }
 
   .container-form {
-    /* display: grid;
-    grid-template-columns: 30%, 70%;
-    grid-template-rows: 200px, auto; */
-    z-index: 2;
-    min-height: 10vh;
-    /* min-width: 80%; */
-    /* margin: 10rem; */
-    position: absolute;
-    top: 15vh;
+    height: auto;
+    position: relative;
+    top: -200px;
+
   }
 
   .topo-transparente {
@@ -278,6 +277,7 @@ body {
     /* border-radius: 1% 0 0 1%; */
     padding: 1rem;
     padding-top: 2rem;
+    height: 100%;
   }
 
   .sidebar-preto h3 {
@@ -299,6 +299,7 @@ body {
     min-width: 100%;
     font-weight: bold;
     font-family: "Poppins";
+    height: 100%;
   }
 
   .form-main h3 {
@@ -310,6 +311,15 @@ body {
 
   .form-main h3::before {
     content: "🟨 ";
+  }
+
+  .form-main a {
+    text-decoration: underline;
+  }
+
+  .form-main a:hover {
+    text-decoration: underline;
+    color: #FFBB00;
   }
 
   .botao-pequeno {
@@ -327,6 +337,12 @@ body {
 
 .opcao-card .card-body {
   color:#2e2e2e;
+}
+
+.checkbox-customizada {
+  width: 1.4rem;
+  height: 1.4rem;
+  border: 1px solid #2e2e2e;
 }
 
  
