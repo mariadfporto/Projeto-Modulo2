@@ -230,7 +230,7 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     height: 40px;
-    width: 250px;
+    min-width: min-content;
   }
 
   #titulo-card {
@@ -300,7 +300,7 @@ body {
   .imagem-sobreposta {
     position: relative;
     top: -50px;
-    z-index: 2;
+    /* z-index: 2; */
   }
 
   @media (max-width: 1140px) {
@@ -333,6 +333,15 @@ body {
     color: white;
   }
 
+  .grid-cursos-branco {
+    background-color: white;
+    padding: 2rem;
+  }
+
+  .grid-cursos-branco > h1 {
+    color: black;
+  }
+
   .faq {
     background-color: white;
     padding: 2rem;
@@ -348,9 +357,53 @@ body {
     gap: 30px;
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 600px) {
     .grid-cursos-menor {
       display: flex;
       flex-direction: column;
     }
+  }
+
+  .curso-baixo {
+    background-color: #111111;
+    color: #9c9c9c;
+    padding: 2rem;
+    max-height: 52vh;
+  }
+
+  .curso-baixo h1 {
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+  }
+
+  .curso-baixo h1::after {
+    content: "curso.";
+    color: #FFBB00;
+  }
+
+  @media (max-width: 1140px) {
+    .curso-baixo {
+     padding-bottom: 1rem;
+     margin-bottom: 2rem;
+    }
+
+    .imagem-sobreposta {
+  display: none;
+    }
+    
+  }
+
+  .icone-curso {
+    display: flex;
+    flex-direction: column;
+  }
+  .icone-curso:hover {
+    color: #FFBB00;
+  }
+
+  .legenda-curso {
+    font-size: 12px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
   }
