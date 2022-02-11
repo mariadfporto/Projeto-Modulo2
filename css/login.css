@@ -2,6 +2,7 @@ body {
   margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
   color: #000000;
+  background-color: #F7F7F7;
 }
 
 h1,
@@ -116,6 +117,187 @@ img {
     font-size: 14px;
   }
 }
+/* Estilo do conteúdo principal */
+
+.barra-topo-preto {
+  background-color: #111111;
+  height: 490px;
+  color: white;
+  margin-top: -1px;
+}
+
+
+
+.question{
+margin-left: 10%;
+margin-top: 5%;
+
+}
+.title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 72px;
+  color: #ffffff;
+  margin-left: 10%;
+
+
+}
+
+.title::after {
+  content: ".";
+  color: #FFBB00;
+}
+
+
+
+.container-form {
+  height: auto;
+  position: relative;
+  top: -468px;
+  margin: 5rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 800px) {
+  .container-form {
+    margin: 0;
+  }
+}
+
+.topo-transparente {
+  grid-column: 1/3;
+  padding-bottom: 3rem;
+}
+
+.topo-transparente > h3 {
+  color: #9c9c9c;
+  font-size: medium;
+  font-weight: 600;
+  
+}
+
+.topo-transparente > h1 {
+  font-size: 50px;
+  color: #F7F7F7;
+}
+
+.enchimento-branco {
+  background-color: #F7F7F7;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10%;
+}
+
+.rectangle{
+  display: flex;
+  flex-direction: row;
+  margin-left: 6vw;
+}
+
+
+.sidebar-preto {
+  background-color: #000000;
+  color: white;
+  width: 460px;
+height: 576px;
+  padding: 2rem;
+  padding-top: 2rem;
+  
+  border-radius: 4px;
+  
+}
+
+@media (max-width: 850px) {
+  .rectangle {
+    display: flex;
+    flex-direction: column;
+    width: 126%;
+    
+    
+  }
+  
+.sidebar-preto{
+  
+}
+
+  .form {
+  padding: auto;
+  }
+}
+
+.sidebar-preto h3 {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.form{
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 4px;
+  width: 900px;
+height: 576px;
+  
+
+}
+
+.form-main {
+  background-color: #ffffff;
+  padding: 1rem;
+  padding-top: 2rem;
+  font-weight: bold;
+  font-family: "Poppins";
+}
+
+.form-group{
+  margin-bottom: 1rem;
+  padding: 2% 0;
+  margin: 0px 0% 0 20%;
+}
+
+.form-main h3 {
+font-family: "Poppins", sans-serif;
+font-size: 15px;
+font-weight: 600;
+}
+
+
+.form-main a {
+  text-decoration: underline;
+}
+
+.form-main a:hover {
+  text-decoration: underline;
+  color: #FFBB00;
+}
+
+.botao-pequeno {
+  background-color: #2e2e2e;
+  color: white;
+}
+
+.checkbox-customizada {
+width: 1.4rem;
+height: 1.4rem;
+border: 1px solid #2e2e2e;
+}
+
+.linha-botao {
+display: flex;
+justify-content: center;
+}
+
+.card {
+color: #2e2e2e;
+}
+
+.botao-grande {
+/* display: none; */
+background-color: #2e2e2e;
+}
+
+
 
 /* Estilos do Footer */
 .footer-bg {
