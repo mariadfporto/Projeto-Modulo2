@@ -403,7 +403,25 @@ body {
   }
 
   .legenda-curso {
+    
     font-size: 12px;
     font-weight: 600;
     font-family: "Poppins", sans-serif;
+  }
+
+  .faq-pergunta {
+    background-color: #ffbb0025;
+    padding: 1rem;
+    margin: 1rem;
+    cursor: pointer;
+  }
+
+  .faq-pergunta::before {
+    content: "+";
+    font-size: 20px;
+    color: #FFBB00;
+  }
+
+  .faq-resposta {
+    margin: 1rem;
   }
