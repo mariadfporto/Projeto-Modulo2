@@ -122,7 +122,7 @@ img {
 
 .barra-topo-preto {
   background-color: #111111;
-  height: 490px;
+  height: 450px;
   color: white;
   margin-top: -1px;
 }
@@ -193,7 +193,6 @@ margin-top: 5%;
   display: flex;
   flex-direction: row;
   margin-left: 6vw;
-  box-shadow: brown;
 }
 
 
@@ -205,33 +204,18 @@ margin-top: 5%;
   border-radius: 4px;
 }
 
-@media (max-width: 850px) {
-  .rectangle {
-    display: flex;
-    flex-direction: column;
-    /* width: 100%; */
-    padding: 5e;
-  }
-  
 
-  .form {
-  padding: auto;
-  }
-}
-
-.sidebar-preto h3 {
-  font-size: 15px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-}
 
 .form{
   background-color: #ffffff;
   padding: 2rem;
-  
-  width: 100%;
-  
+  width: 64vw;
+  margin-left: 9%;
+  height: 25vh;
+  margin-top: 10%;
 }
+
+
 
 .form-main {
   background-color: #ffffff;
@@ -263,8 +247,63 @@ font-weight: 600;
   color: #FFBB00;
 }
 
+.col-5 {
+  max-width: 95.666667%;
+}
+
+.col-3{
+    max-width: 55%;
+}
+
+@media (max-width: 800px) {
+
+  .barra-topo-preto {
+    background-color: #111111;
+    height: 490px;
+    color: white;
+    margin-top: -1px;
+  }
+
+  .rectangle {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .title{
+    font-size: 40px;
+    font-size: 40px;
+    margin-top: 15%;
+    margin-left: 5%;
+  }
+
+  .sidebar-preto h3 {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.form{
+  background-color: #ffffff;
+  width: 80vw;
+  height: 35vh;
+  margin-left: 7%;
+  margin-top: 10%;
+}
 
 
+
+
+.col-5 {
+
+  max-width: 95.666667%;
+}
+
+.col-3{
+  max-width: 65.666667%;
+}
+
+
+}
 
 /* Estilos do Footer */
 .footer-bg {
