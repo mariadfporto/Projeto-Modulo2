@@ -5,8 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Front Enders - Plataforma Completa</title>
-  <link rel="stylesheet" href="./css/servicos.css">
+  <link rel="stylesheet" href="css/servicos.css">
  
+   <!-- Iniciando o Bootstrap -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+ 
+   <!-- JS do FAQ e jQuery-->
+   <script src="planos.js" defer></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+
   <!-- Fontes Utilizadas no site -->
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,8 +48,8 @@
   <h1 class="titulo-semi-amarelo">planos<h1> 
 
     <div class="row">
-    <div class="plano-item col-md-6 col-sm-12">
-      <h3 class="plano-prata-nome">PRATA</h3>
+    <div class="plano-item col-md-5 col-sm-11 rounded" id="card1">
+      <h3 class="plano-titulo">PRATA</h3>
       <span class="plano-valor">R$ 199 <span class="plano-mes">mensal</span></span>
       <ul>
         <li>5 horas de mentoria e feedback por semana</li>
@@ -51,12 +58,12 @@
         <li>Desconto em parceiros</li>
       </ul>
 
-      <button type="button" class="btn btn-secondary btn-lg" href="#">Inscreva-se</button>
+      <div class="btn btn-warning botao-amarelo" href="cadastro.html">Inscreva-se</div>
 
     </div>
 
-    <div class="plano-item col-md-6 col-sm-12">
-      <h3 class="plano-ouro-nome">OURO</h3>
+    <div class="plano-item col-md-5 col-sm-11 rounded" id="card2">
+      <h3 class="plano-titulo">OURO</h3>
       <span class="plano-valor">R$ 299 <span class="plano-mes">mensal</span></span>
       <ul>
         <li>10 horas de feedback/mentoria por semana</li>
@@ -66,7 +73,7 @@
         <li>Desconto em parceiros</li>
         <li>Acesso ao Clube FrontEnders</li>
       </ul>
-      <button type="button" class="btn btn-warning btn-lg" href="#">Inscreva-se</button>
+      <div class="btn btn-warning botao-amarelo" href="cadastro.html">Inscreva-se</div>
     </div>
   </div>
 </div>
