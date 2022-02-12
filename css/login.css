@@ -117,6 +117,7 @@ img {
     font-size: 14px;
   }
 }
+
 /* Estilo do conteúdo principal */
 
 .barra-topo-preto {
@@ -129,8 +130,14 @@ img {
 
 
 .question{
-margin-left: 8%;
+margin-left: 7%;
 margin-top: 5%;
+font-family: "Roboto";
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 32px;
+color: #b2b2b2;
 
 }
 .title {
@@ -147,6 +154,31 @@ margin-top: 5%;
 .title::after {
   content: ".";
   color: #FFBB00;
+}
+
+
+.container, img{
+  display: flex;
+  align-items: center;
+
+}
+
+
+.img-location{
+  margin-right:1rem;
+  }
+
+.img-email{
+  margin-right: 1rem;
+}
+
+
+  .img-phone{
+    margin-right: 1rem;
+  }
+
+.img-insta, .img-face, .img-YT{
+  padding-left: 1rem;
 }
 
 
@@ -186,7 +218,7 @@ margin-top: 5%;
   background-color: #F7F7F7;
   margin: 0;
   padding: 0;
-  margin-bottom: 10%;
+  margin-bottom: 2%;
 }
 
 .rectangle{
@@ -199,32 +231,71 @@ margin-top: 5%;
 .sidebar-preto {
   background-color: #000000;
   color: white;
-  width: 460px;
-height: 576px;
   padding: 2rem;
   padding-top: 2rem;
-  
   border-radius: 4px;
   
 }
 
-@media (max-width: 850px) {
+.loja-online{
+  font-family: "Poppins";
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+}
+
+
+ .text-email{
+  margin-top: 0.8rem;
+  font-family: "Roboto";
+  font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 24px;
+}
+
+ .text-address{
+  margin-bottom: 0.8rem;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+ .text-phone{
+  font-family:"Roboto" ;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+ .social{
+  margin-top: 2.5rem;
+}
+
+@media (max-width: 800px) {
   .rectangle {
     display: flex;
     flex-direction: column;
-    width: 126%;
-    
-    
+    padding: 5%;
   }
-  
-.sidebar-preto{
-  
-}
+    .sidebar-preto{
+      width: 80vw;
+      height: 50vh;
+    }
+    .form{
+      height: 50vh;
+    }
+    .form-group {
+      margin: 0;
+      padding: 2% 0;
+      
+    }
+  }
 
-  .form {
-  padding: auto;
-  }
-}
 
 .sidebar-preto h3 {
   font-size: 15px;
@@ -235,11 +306,8 @@ height: 576px;
 .form{
   background-color: #ffffff;
   padding: 2rem;
-  border-radius: 4px;
-  width: 900px;
-height: 576px;
+  width: 100%;
   
-
 }
 
 .form-main {
@@ -251,9 +319,17 @@ height: 576px;
 }
 
 .form-group{
-  margin-bottom: 1rem;
+  align-items: center;
   padding: 2% 0;
-  margin: 0px 0% 0 20%;
+  
+}
+
+label, input{
+  font-family: "Poppins";
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
 }
 
 .form-main h3 {
@@ -272,32 +348,29 @@ font-weight: 600;
   color: #FFBB00;
 }
 
-.botao-pequeno {
-  background-color: #2e2e2e;
-  color: white;
-}
 
-.checkbox-customizada {
-width: 1.4rem;
-height: 1.4rem;
-border: 1px solid #2e2e2e;
-}
-
-.linha-botao {
-display: flex;
-justify-content: center;
-}
-
-.card {
-color: #2e2e2e;
-}
-
-.botao-grande {
-/* display: none; */
-background-color: #2e2e2e;
+.btn-link {
+  font-weight: 400;
+  color: #000000;
+  background-color: transparent;
+  font-family: "Poppins";
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 24px;
 }
 
 
+.btn-warning {
+  color: #212529;
+  font-weight: bold;
+  font-family: Poppins;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24px;
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
 
 /* Estilos do Footer */
 .footer-bg {
