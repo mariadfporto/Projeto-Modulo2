@@ -8,7 +8,7 @@ $(function() {
         },
         mouseleave: function() {
             // alert("fora")
-            $("#card1").fadeTo(1000, 0.4)
+            $("#card1").fadeTo(1000, 0.6)
         }
     });
 
@@ -20,7 +20,7 @@ $(function() {
         },
         mouseleave: function() {
             // alert("fora")
-            $("#card2").fadeTo(1000, 0.4)
+            $("#card2").fadeTo(1000, 0.6)
         }
     });
 
