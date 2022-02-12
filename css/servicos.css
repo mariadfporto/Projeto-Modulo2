@@ -429,6 +429,7 @@ body {
 
   .cards-planos {
     padding: 2rem;
+    margin-bottom: 3rem;
   }
 
   .plano-item {
@@ -443,13 +444,16 @@ body {
     grid-template-columns: auto 120px;
     gap: 2rem;
     opacity: 0.6;
-    /* width: 80%;
-    transition: height 2s; */
+    transition: width 2s;
   }
 
-  /* .plano-item:hover {
-    height: 120%;
-  } */
+  .plano-item:hover {
+    width: 105%;
+  }
+
+  .plano-item:hover > h3 {
+    color: #FFBB00;
+  }
 
   .plano-item ul {
     grid-column: 1/3;
