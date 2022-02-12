@@ -36,7 +36,7 @@
   </header>
   <!-- ___________________________________________________________________________________________________ -->
 
-  <!-- Conteúdo principal'1 -->
+  <!-- Início do conteúdo principal -->
 
   <div class="barra-topo-preto"></div>
 
@@ -44,53 +44,68 @@
     <div class="container-form col-md-10 col-sm-12">
       
         <div class="topo-transparente col-md-12">
-          <h3 class="question">Já é nosso aluno?</h3>
+          <p class="question">Já é nosso aluno?</p>
           <p class="title">faça seu login</p>
         </div>
       
-
-      
         <div class="rectangle">
           <div class="sidebar-preto rounded-left">
-            <h3>Loja online</h3>
-            <br /><br />
-            <h3 class="address">
+            <p class="loja-online">Loja online</p>
+            <br/><br/>
+
+            <div class="container address">
+              <img src="./img/redes/location.png" class="img-location ">
+              <p class="text-address">
               Rua Ali Perto, 35 <br />
               Rio de Janeiro - RJ <br />
               Brasil - Terra - Via Láctea
-            </h3>
-            <br />
-            <!-- Card plano prata -->
-            <h3 class="email">
+            </p>
+            </div>
+            
+            <div class="container email">
+            <img src="./img/redes/email.png" class="img-email">
+            <p class="text-email">
               vendas@frontenders.com <br />
               assistencia@frontenders.com
-            </h3>
-            <h3 class="phone">+55 21 9999-9999</h3>
-          </div>
-        
-          
+            </p> 
+            </div>
+            <br>
+            <div class="container phone">
+              <img src="./img/redes/phone.png" class="img-phone" >
+              <p class="text-phone">
+              +55 21 9999-9999</p>
+              </div>
+              
+              <div class="container social">
+                <img src="./img/redes/insta-yellow.png" class="img-insta">
+              <img src="./img/redes/face-yellow.png" class="img-face">
+              <img src="./img/redes/yt-yellow.png" class="img-YT "></div>
+            </div>
+
+            <!-- Formulário  -->
+            
             <form class="form">
               <!-- Input nome -->
               <div class="form-group">
                 <label for="nome">Nome</label>
-                <input type="text" class="form-control form-control-lg col-8" id="nome" />
-              
+                <input type="text" class="form-control form-control-lg col-8" id="nome" placeholder="Seu nome" />
+              <br>
               <!-- Input email -->
               
                 <label for="email">E-mail</label>
                 <input type="email" class="form-control form-control-lg col-8" id="email" placeholder="contato@email.com" />
-              
+              <br>
               <!-- Input senha -->
               
                 <label for="password">Senha</label>
                 <input type="password" class="form-control form-control-lg col-8" id="password" placeholder="XXXXXXXXXXXX" id="password" />
-              
+              <br>
               
                 <!-- Link esqueci minha senha -->
                 <a type="button" class="btn btn-link" href="./esqueci-minha-senha.html">Esqueci minha senha</a>
                 <br /><br />
                 <!-- Botão entrar -->
-                <button type="submit" class="btn btn-warning col-5 btn-lg">Entrar</button>
+                <a type="button" href="./html/" class="btn btn-warning col-5 btn-lg">Entrar</a>
               </div> 
           </form>
         </div>
