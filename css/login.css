@@ -264,6 +264,12 @@ img {
   margin-top: 2.5rem;
 }
 
+.pontos{
+  margin-top: 13%;
+  margin-left: -2%;
+
+}
+
 .sidebar-preto h3 {
   font-size: 15px;
   font-family: "Poppins", sans-serif;
@@ -377,6 +383,9 @@ input {
     font-size: 18px;
     line-height: 24px;
     margin: 1% 0;
+  }
+.pontos{
+  display: none;
   }
 }
 
