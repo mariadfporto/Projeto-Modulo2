@@ -53,10 +53,18 @@ $(document).ready(function(){
     console.log(produto)
    })
 
-   $("#botao-enviar").click(function() {
-    window.location.href = "cadastro-realizado-sucesso.html";
-   })
+// //    Ainda não está funcionando
+//    let email = $("#email");
+
+//    $.validaEmail() = function() {
+//      console.log("O email é: " + email);
+//      console.log("validei o email!")
+//      // window.location.href = "cadastro-realizado-sucesso.html";
+//    }
+
+
   
   });
+
 
   
