@@ -355,8 +355,12 @@ font-weight: 600;
   gap: 32px;
 }
 
+.footer a {
+  text-decoration: none;
+}
+
 .footer a:hover {
-  color: #ffffff;
+  color: #FFBB00;
 }
 
 .footer-copy {

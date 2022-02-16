@@ -1,14 +1,3 @@
-/* Estilos Gerais do Site:
-1 - Estilos gerais do site, não remover esse conteúdo para deixarmos o site padrão.
-2 - As cores utiliadas são as básicas, #000000 e #ffffff. A cor do botão é o warning.
-3 - Para o header, utilizei o flexbox, para o footer o grid.
-4 - Toda a home está responsiva. Se vocês tiverem dúvidas ou não saberem deixar responsivo, fala comigo.
-5 - A fonte utilizada padrão é a Arial, e a primária é a Poppins. Estão em rem, se não souberem converter, deixa em px mesmo. 
-6 - Qualquer dúvida, estou a disposição. beiiijooosssss 
-7 - Fundo do corpo (quase-preto): #111111;
-8 - Cor amarelo: #FFBB00;*/
-
-
 body {
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
@@ -90,7 +79,7 @@ body {
     display: block;
     height: 2px;
     width: 0px;
-    background: #ffffff;
+    background: #ffbb00;
     margin-top: 4px;
     transition: 0.3s;
     position: absolute;
@@ -185,7 +174,7 @@ body {
   }
   
   .footer a:hover {
-    color: #ffffff;
+    color: #ffbb00;
   }
   
   .footer-copy {
@@ -216,37 +205,63 @@ body {
 
   /* Estilo do conteúdo principal */
   .topo {
-      background-color: #111111;
-      padding: 2rem;
+      background-color: #000000;
+      padding-top: 20px;
       color: #9c9c9c;
       font-family: "Roboto";
+
   }
+
+  .topo-p {
+    background-color: #000000;
+    padding: 20px;
+    color: #9c9c9c;
+    font: 400 1.5rem/1.5 "Roboto", sans-serif;
+}
+  .chamada-h1{
+    margin-top: 1px;
+    color: #ffffff;
+    font: 600 4rem/1.125 "Poppins", sans-serif;
+  
+}
+
+.chamada-h1-fim{
+  margin-top: 200px;
+  color: #ffffff;
+  font: 600 4rem/1.125 "Poppins", sans-serif;
+}
+
+    .informacoes-p {
+    color: #9c9c9c;
+    font: 400 1.rem/1.5 "Roboto", sans-serif;
+}
+    .ponto {
+    color: #ffbb00;
+}
+    .botao-contratar, .botao-contratar:hover{
+      color: #000000;
+      font-weight: 400;
+
+}
 
   .topo > img {
       max-width: 50vw;
-  }
-
-  .botao-amarelo {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    height: 40px;
-    width: 250px;
   }
 
   #titulo-card {
     color: white;
     font-size: 20px;
     font-weight: 600;
+    padding:  0 0 10px 5px;
     font-family: "Poppins", sans-serif;
   }
-
   .icone {
       width: 40px;
       height: auto;
   }
 
   .card {
-    background-color: black;
+    background-color: #111111;
   }
 
   .card .fa-solid {
@@ -263,15 +278,16 @@ body {
     font-size: 12px;
   }
 
-  .planos {
+ /*  .planos {
     min-height: 40vh;
     padding-top: 70px;
     padding: 2rem;
-  }
+  } */
 
   .titulo-semi-amarelo {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
+    color:#000000 ;
   }
 
   .titulo-semi-amarelo::after {
@@ -287,8 +303,9 @@ body {
   }
 
   .curso h1 {
+    padding-top: 30px;
     color: white;
-    font-size: 50px;
+    font-size: 70px;
     font-weight: 600;
   }
 
@@ -296,6 +313,13 @@ body {
     content: "curso.";
     color: #FFBB00;
   }
+
+  .curso p {
+    color: #9c9c9c;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
 
   .imagem-sobreposta {
     position: relative;
@@ -325,7 +349,7 @@ body {
   }
 
   .grid-cursos {
-    background-color: #111111;
+    background-color:#ffffff;
     padding: 2rem;
   }
 
@@ -337,6 +361,13 @@ body {
     background-color: white;
     padding: 2rem;
     padding-top: 70px;
+    
+  }
+
+  .faq-pergunta-1{
+    font-size: 20px;
+    color: #000000;
+    padding: 10px 0 10px 0;
   }
 
   .grid-cursos-menor {
@@ -346,6 +377,7 @@ body {
     grid-template-rows: repeat(2, 1fr);
     font-size: 100px;
     gap: 30px;
+    
   }
 
   @media (max-width: 800px) {
@@ -354,3 +386,98 @@ body {
       flex-direction: column;
     }
   }
+
+  /* Estilos dos Planos */
+.plano-bg {
+  background: #000000;
+  margin: -15px;
+}
+
+.plano {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  color: #ffffff;
+  font: 600 3rem/1.125 "Poppins", sans-serif;
+}
+
+#plano .plano {
+  padding-top: 0px;
+}
+
+.plano h2 {
+  grid-column: 1/-1;
+  font: 600 4rem/1.125 "Poppins", sans-serif;
+}
+
+.plano-item {
+  background-color: #111111;
+  padding: 32px 32px 32px 60px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  border-radius: 4px;
+}
+
+.plano-prata-nome{
+  margin-bottom: 40px;
+  color: #b2b2b2;
+  font: 600 2rem/1.25 "Poppins", sans-serif;
+}
+.plano-ouro-nome {
+  margin-bottom: 40px;
+  color:#ffbb00 ;
+  font: 600 2rem/1.25 "Poppins", sans-serif;
+}
+.plano-valor {
+  grid-column: 2;
+  display: block;
+  text-align: right;
+  color: #ffffff;
+  font: 600 2rem/1.25 "Poppins", sans-serif;
+}
+
+.plano-mes{
+color: #b2b2b2;
+font: 400 0.75rem/1.35 "Poppins", sans-serif;
+}
+
+.plano-item ul {
+  grid-column: 1/-1;
+  margin-bottom: 32px;
+  font: 500 1.125rem/1.35 "Roboto", sans-serif;
+  color:#ffffff;
+}
+
+.plano-item li {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.plano-item li + li {
+  margin-top: 20px;
+}
+
+.plano-item li::before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 9px;
+  background-image: url("../../img/icones/lista.svg");
+  position: absolute;
+  left: -21px;
+}
+
+@media (max-width: 800px) {
+  .plano {
+    grid-template-columns: 1fr;
+  }
+}
+.chamada-h1-fim-2{
+  margin-top: 40px;
+  color: #000000;
+  font: 600 4rem/1.125 "Poppins", sans-serif;
+}
