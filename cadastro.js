@@ -52,10 +52,6 @@ $(document).ready(function(){
     produto = "pacote-ouro";
     console.log(produto)
    })
-
-   $("#botao-enviar").click(function() {
-    window.location.href = "cadastro-realizado-sucesso.html";
-   })
   
   });
 
