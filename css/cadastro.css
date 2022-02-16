@@ -1,14 +1,3 @@
-/* Estilos Gerais do Site:
-1 - Estilos gerais do site, não remover esse conteúdo para deixarmos o site padrão.
-2 - As cores utiliadas são as básicas, #000000 e #ffffff. A cor do botão é o warning.
-3 - Para o header, utilizei o flexbox, para o footer o grid.
-4 - Toda a home está responsiva. Se vocês tiverem dúvidas ou não saberem deixar responsivo, fala comigo.
-5 - A fonte utilizada padrão é a Arial, e a primária é a Poppins. Estão em rem, se não souberem converter, deixa em px mesmo. 
-6 - Qualquer dúvida, estou a disposição. beiiijooosssss 
-7 - Fundo do corpo (quase-preto): #111111;
-8 - Cor amarelo: #FFBB00;*/
-
-
 body {
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
@@ -90,7 +79,7 @@ body {
     display: block;
     height: 2px;
     width: 0px;
-    background: #ffffff;
+    background: #ffbb00;
     margin-top: 4px;
     transition: 0.3s;
     position: absolute;
@@ -188,7 +177,7 @@ body {
   }
   
   .footer a:hover {
-    color: #ffffff;
+    color: #ffbb00;
   }
   
   .footer-copy {
@@ -228,6 +217,7 @@ body {
   .titulo-semi-amarelo {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
+
   }
 
   .titulo-semi-amarelo::after {
@@ -236,8 +226,8 @@ body {
   }
 
   .barra-topo-preto {
-    background-color: #111111;
-    min-height: 60vh;
+    background-color: #000000;
+    min-height: 40vh;
     color: white;
     z-index: -1;
   }
@@ -246,8 +236,9 @@ body {
     height: auto;
     position: relative;
     top: -300px;
-    margin: 5rem;
-    margin-bottom: 1rem;
+   /*  margin: 5rem; */
+   margin-left: 450px;
+    margin-bottom: -10rem;
   }
 
   @media (max-width: 800px) {
@@ -263,13 +254,13 @@ body {
 
   .topo-transparente > h3 {
     color: #9c9c9c;
-    font-size: medium;
+    font-size: 20px;
     font-weight: 600;
     
   }
 
   .topo-transparente > h1 {
-    font-size: 50px;
+    font-size: 80px;
     color: white;
   }
 
@@ -351,4 +342,84 @@ body {
 .botao-grande {
   /* display: none; */
   background-color: #2e2e2e;
+}
+
+
+/* Estilos da conclusão */
+.citacao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #ffbb00;
+  overflow: hidden;
+  margin-bottom: 150px;
+}
+
+.citacao img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0px;
+  padding-top: -510px;
+}
+
+.citacao-conteudo {
+  padding: 40px 40px 80px 80px;
+  align-self: end;
+  background: url("../../img/dec/bottom-right-p.svg") no-repeat bottom 40px
+    right 40px;
+}
+
+/* Citação */
+.citacao-conteudo p {
+  max-width: 32ch;
+  font-family: "Merriweather", serif;
+  font-style: italic;
+  font-weight: 900;
+  margin-bottom: 32px;
+  position: relative;
+  color: #000000;
+  font: 600 2rem/1.25 "Poppins", sans-serif;
+}
+
+.citacao-conteudo{
+  color: #000000;
+  font: 400 1.125rem/1.35 "Poppins", sans-serif;
+}
+
+
+.citacao p::before,
+.citacao p::after {
+  font-size: 5rem;
+  color: #e4a30b;
+  position: absolute;
+}
+
+.citacao p::before {
+  content: "“";
+  left: -50px;
+  top: -20px;
+}
+
+.citacao p::after {
+  content: "”";
+}
+
+@media (min-width: 800px) {
+  .citacao img {
+    max-height: 520px;
+  }
+}
+
+@media (max-width: 800px) {
+  .citacao {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .citacao img {
+    max-height: 200px;
+  }
+  .citacao-conteudo {
+    padding: 40px 20px;
+    margin: auto;
+  }
 }
