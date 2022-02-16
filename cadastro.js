@@ -52,19 +52,7 @@ $(document).ready(function(){
     produto = "pacote-ouro";
     console.log(produto)
    })
-
-// //    Ainda não está funcionando
-//    let email = $("#email");
-
-//    $.validaEmail() = function() {
-//      console.log("O email é: " + email);
-//      console.log("validei o email!")
-//      // window.location.href = "cadastro-realizado-sucesso.html";
-//    }
-
-
   
   });
-
 
   
