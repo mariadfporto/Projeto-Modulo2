@@ -53,16 +53,11 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
   }
-  
-  .header-logo {
-    background-color: #ffffff;
-  }
-  
+
   .header-menu {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
-    
   }
   
   .header-menu a {
@@ -71,7 +66,6 @@ body {
     position: relative;
     color: #ffffff;
     font: 400 1.125rem/1.35 "Poppins", sans-serif;
-    text-decoration: none;
   }
   
   .header-menu a:after {
@@ -79,7 +73,7 @@ body {
     display: block;
     height: 2px;
     width: 0px;
-    background: #ffffff;
+    background: #ffbb00;
     margin-top: 4px;
     transition: 0.3s;
     position: absolute;
@@ -174,7 +168,7 @@ body {
   }
   
   .footer a:hover {
-    color: #ffffff;
+    color: #ffbb00;
   }
   
   .footer-copy {
@@ -204,58 +198,11 @@ body {
   }
 
   /* Estilo do conteúdo principal */
-  .topo {
-      background-color: #111111;
-      padding: 2rem;
-      color: #9c9c9c;
-      font-family: "Roboto";
-  }
-
-  .topo > img {
-      max-width: 50vw;
-  }
-
   .botao-amarelo {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     height: 40px;
     width: 250px;
-  }
-
-  #titulo-card {
-    color: white;
-    font-size: 20px;
-    font-weight: 600;
-    font-family: "Poppins", sans-serif;
-  }
-
-  .icone {
-      width: 40px;
-      height: auto;
-  }
-
-  .card {
-    background-color: black;
-  }
-
-  .card .fa-solid {
-    color: #FFBB00;
-  }
-
-  .card > h3 {
-    font-size: 15px;
-    color: white;
-    font-weight: 600;
-  }
-
-  .card .text-white {
-    font-size: 12px;
-  }
-
-  .planos {
-    min-height: 40vh;
-    padding-top: 70px;
-    padding: 2rem;
   }
 
   .titulo-semi-amarelo {
@@ -299,47 +246,124 @@ body {
     }
     
   }
-
-  .experts {
-    padding: 2rem;
-  }
-
-  .nome-expert {
-    color: #FFBB00;
-    font-weight: 600;
-  }
-
-  .foto-expert {
-    border-radius: 50%;
-  }
-
+ 
   .grid-cursos {
-    background-color: #111111;
-    padding: 2rem;
+    padding: 100px 2rem;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* font-size: 100px; */
   }
 
   .grid-cursos > h1 {
-    color: white;
+    grid-column: 1/4;
+    text-align: left;
   }
 
-  .faq {
-    background-color: white;
-    padding: 2rem;
-    padding-top: 70px;
+  .legenda-curso {
+    font-size: 14px;
+    font-weight: 600;
   }
 
-  .grid-cursos-menor {
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+  .icone-curso {
     font-size: 100px;
-    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
   }
 
-  @media (max-width: 800px) {
-    .grid-cursos-menor {
-      display: flex;
-      flex-direction: column;
-    }
+  .icone-curso:hover {
+    color: #FFBB00;
   }
+
+  .curso-baixo {
+    background-color: #111111;
+    color: white;
+    padding: 2rem;
+  }
+
+  .curso-baixo h1::after {
+    content: "curso.";
+    color: #FFBB00;
+
+  }
+
+    /* Estilos dos Planos */
+.plano {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  color: #ffffff;
+  font: 600 3rem/1.125 "Poppins", sans-serif;
+}
+
+.plano > h1 {
+grid-column: 1 / 3;
+color: black;
+}
+
+.plano-item {
+  background-color: #000000;
+  padding: 32px 32px 32px 60px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  border-radius: 4px;
+}
+
+.plano-valor {
+  grid-column: 2 / 3;
+  display: block;
+  text-align: right;
+  color: #ffffff;
+  font: 600 2rem/1.25 "Poppins", sans-serif;
+}
+
+.plano-mes{
+color: #b2b2b2;
+display: block;
+font: 400 0.75rem/1.35 "Poppins", sans-serif;
+}
+
+.plano-item ul {
+  grid-column: 1/-1;
+  margin-bottom: 32px;
+  font: 500 1.125rem/1.35 "Roboto", sans-serif;
+  color:#ffffff;
+}
+
+.plano-item li {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.plano-item li + li {
+  margin-top: 20px;
+}
+
+.plano-item li::before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 9px;
+  background-image: url("../../img/icones/lista.svg");
+  position: absolute;
+  left: -21px;
+}
+
+@media (max-width: 800px) {
+  .plano {
+    grid-template-columns: 1fr;
+  }
+
+  .plano-item {
+    width: 80%;
+  }
+
+  .plano > h1 {
+    grid-column: 1/2;
+  }
+}
