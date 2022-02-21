@@ -235,10 +235,10 @@ body {
   .container-form {
     height: auto;
     position: relative;
-    top: -300px;
+    top: -200px;
    /*  margin: 5rem; */
-   margin-left: 450px;
-    margin-bottom: -10rem;
+   /* margin-left: 450px;
+  margin-bottom: -10rem; */
   }
 
   @media (max-width: 800px) {
@@ -268,12 +268,12 @@ body {
     background-color: white;
     margin: 0;
     padding: 0;
+    height: auto;
   }
 
   .sidebar-preto {
     background-color: #000000;
     color: white;
-    /* border-radius: 1% 0 0 1%; */
     padding: 1rem;
     padding-top: 2rem;
     height: 100%;
@@ -340,8 +340,9 @@ body {
 }
 
 .botao-grande {
-  /* display: none; */
+  display: none;
   background-color: #2e2e2e;
+  color: white;
 }
 
 
