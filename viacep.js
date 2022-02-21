@@ -41,3 +41,13 @@ const pesquisarCep = async() => {
 
 document.getElementById('cep')
         .addEventListener('focusout',pesquisarCep);
+
+const botao = document.getElementById('botao-enviar');
+botao.addEventListener("click", function() {
+    if (cep.value != '' || document.getElementById('endereco').value != '' || document.getElementById('nome').value) {
+        document.location.href="cadastro-realizado-sucesso.html";
+    } else {
+        document.getElementById('mensagem-erro').innerText = "Preencha o formulário!";
+    }
+})
+

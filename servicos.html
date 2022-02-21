@@ -7,8 +7,16 @@
   <title>Front Enders - Plataforma Completa</title>
 
   <!-- Iniciando o Bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/servicos.css">
+
+  <!-- Links  -->
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/animacao.css">
+  <link rel="shortcut icon" href="./img/icones/cima.png" type="image/x-icon">
+  <script>document.documentElement.classList.add('js');</script>
 
   <!-- JS do FAQ e jQuery-->
   <script src="faq.js" defer></script>
@@ -33,23 +41,29 @@
 
     <!-- Header -->
     <!-- ___________________________________________________________________________________________________ -->
-  <header class="header-bg">
-    <div class="header container">
-     
-       <a href="index.html">
-        <img src="./img/logo.jpg" width="200" height="32" alt="FrontEnders" class="img-responsive">
-      </a>
-
-      <nav >
-        <ul class="nav header-menu">
-          <li class="nav-link"><a href="./servicos.html">Serviços</a></li>
-          <li class="nav-link"><a href="./cadastro.html">Cadastro</a></li>
-        <li class="nav-link"><a href="contato.html">Contato</a></li>
-        <li class="nav-link"><a href="./login.html">Login</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <header class="header-bg">
+      <div class="header container">
+         <a href="index.html">
+          <img src="./img/icones/logo.jpg" width="200" height="32" alt="FrontEnders">
+        </a>
+      <nav aria-label="primaria">
+      <ul class="nav header-menu">
+        <li class="nav-item">
+          <a class="nav-link " href="servicos.html">Serviços</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cadastro.html">Cadastro</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contato.html">Contato</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Login</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+    </header>
   <!-- ___________________________________________________________________________________________________ --> 
 
   
@@ -57,9 +71,9 @@
           <!-- Aqui vai o seu conteúdo. -->
 
         <!-- <div class="topo"> -->
-        <div class="topo container-fluid">
+        <div class="topo container-fluid"  class="fadeInDown"data-anime="200">
             <div class="row">
-            <img src="img/servicos.jpg" class="col-md-6 col-sm-12">
+            <img src="img/servicos.jpg" class="col-md-6 col-sm-12"  class="fadeInDown"data-anime="200">
 
             <div class="col-md-6 col-sm-12">
               <div>
@@ -71,7 +85,7 @@
               <br><br>
 
                 <div>
-                <h3 id="titulo-card">INFORMAÇÕES</h3>
+                <h3 id="titulo-card" class="fadeInDown"data-anime="200">INFORMAÇÕES</h3>
                 <div class="card">
                   <div class="card-body">
                     <div class="row">
@@ -152,22 +166,26 @@
       <h1 class="titulo-semi-amarelo">nossos experts</h1>
       <br><br>
       <div class="row text-center">
-        <div class="col-md-3 col-sm-5"><img src="img/foto-amanda.png" class="foto-expert">
+        <div class="col-md-3 col-sm-5 expert"><img src="img/foto-amanda.png" class="foto-expert">
+          <br>
         <p class="nome-expert">Amanda Vieira</p>
         <p>Mestre Full Stack</p>
         </div>
 
-        <div class="col-md-3 col-sm-5"><img src="img/foto-mauro.jpg" class="foto-expert">
+        <div class="col-md-3 col-sm-5 expert"><img src="img/foto-mauro.jpg" class="foto-expert">
+          <br>
           <p class="nome-expert">Mauro Mendes</p>
           <p>Mestre Back End</p>
           </div>
 
-          <div class="col-md-3 col-sm-5"><img src="img/foto-duda.jpg" class="foto-expert">
+          <div class="col-md-3 col-sm-5 expert"><img src="img/foto-duda.jpg" class="foto-expert">
+            <br>
             <p class="nome-expert">Maria Eduarda Frota</p>
             <p>Mestre Full Stack</p>
             </div>
 
-            <div class="col-md-3 col-sm-5"><img src="img/foto-will.png" class="foto-expert">
+            <div class="col-md-3 col-sm-5 expert"><img src="img/foto-will.png" class="foto-expert">
+              <br>
               <p class="nome-expert">William Firmino</p>
               <p>Mestre Front End</p>
               </div>
@@ -193,48 +211,40 @@
     </div>
 
     <!-- Parte dos preços dos planos -->
-    <div class="planos container-fluid">
+    <article class="plano container">
+        <h1 class="titulo-semi-amarelo">planos</h2>
+        <div class="plano-item">
+          <h3 class="plano-prata-nome">PRATA</h3>
+          
+          <div class="plano-valor">R$ 199 <span class="plano-mes">mensal</span></div>
 
-      <h1 class="titulo-semi-amarelo">escolha agora</h1>
-      <div class="cards-planos col-12">      
-          <div class="row">
-            <div class="col-md-5 col-sm-11">
-          <div class="plano-item rounded" id="card1">
-            <h3 class="plano-titulo" id="plano-titulo-prata">PRATA</h3>
-            <span class="plano-valor">R$ 199 <span class="plano-mes">mensal</span></span>
-            <ul>
-              <li>5 horas de mentoria e feedback por semana</li>
-              <li>Acesso a todos os cursos</li>
-              <li>Suporte 24h</li>
-              <li>Desconto em parceiros</li>
-            </ul>
-      
-            <div class="btn btn-warning botao-amarelo" href="cadastro.html">Inscreva-se</div>
-      
-          </div>
+          <ul>
+            <li>5 horas de mentoria e feedback por semana</li>
+            <li>Acesso a todos os cursos</li>
+            <li>Suporte 24h</li>
+            <li>Desconto em parceiros</li>
+          </ul>
+          <a class="btn btn-secondary" href="cadastro.html">Inscreva-se</a>
+        
         </div>
-      
-        <div class="col-md-5 col-sm-11">
-          <div class="plano-item rounded" id="card2">
-            <h3 class="plano-titulo" id="plano-titulo-ouro">OURO</h3>
-            <span class="plano-valor">R$ 299 <span class="plano-mes">mensal</span></span>
-            <ul>
-              <li>10 horas de feedback/mentoria por semana</li>
-              <li>Assistência especial</li>
-              <li>Suporte 24h</li>
-              <li>Acesso ao servidor do Discord</li>
-              <li>Desconto em parceiros</li>
-              <li>Acesso ao Clube FrontEnders</li>
-            </ul>
-            <div class="btn btn-warning botao-amarelo" href="cadastro.html">Inscreva-se</div>
-          </div>
+  
+        <div class="plano-item">
+          <h3 class="plano-ouro-nome">OURO</h3>
+          <span class="plano-valor">R$ 299 <span class="plano-mes">mensal</span></span>
+          <ul>
+            <li>10 horas de feedback/mentoria por semana</li>
+            <li>Assistência especial</li>
+            <li>Suporte 24h</li>
+            <li>Acesso ao servidor do Discord</li>
+            <li>Desconto em parceiros</li>
+            <li>Acesso ao Clube FrontEnders</li>
+          </ul>
+          <a class="btn btn-warning" href="cadastro.html">Inscreva-se</a>
         </div>
-      </div>
-      </div>
-      
+     
+    </article>
 
-    </div>
-
+    <!-- Parte dos cursos -->
     <div class="curso">
       <div class="row">
         <div class="col-md-6 col-sm-12">
@@ -246,7 +256,7 @@
             <br>
             Uma plataforma com cursos de mais de 60 linguagens para você ter como referência no seu desenvolvimento.
             <br><br>
-            <button class="btn btn-warning botao-amarelo" href="cursos.html">CONHEÇA MAIS</button>
+            <a class="btn btn-warning botao-amarelo" href="cursos.html">CONHEÇA MAIS</a>
           </div>
         </div>
 
@@ -309,13 +319,13 @@
         </ul>
         <div class="footer-redes">
           <a href="./">
-            <img src="./img/redes/instagram.svg" width="32" height="32" alt="Instagram">
+            <img src="./img/redes/instagram.png" width="32" height="32" alt="Instagram">
           </a>
           <a href="./">
-            <img src="./img/redes/facebook.svg" width="32" height="32" alt="Facebook">
+            <img src="./img/redes/facebook.png" width="32" height="32" alt="Facebook">
           </a>
           <a href="./">
-            <img src="./img/redes/youtube.svg" width="32" height="32" alt="Youtube">
+            <img src="./img/redes/youtube.png" width="32" height="32" alt="Youtube">
           </a>
         </div>
       </div>
@@ -336,6 +346,7 @@
 
 <!-- Incluindo o jQuery -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-
+<script src="./js/plugins/simple-anime.js"></script>
+<script src="./js/script.js"></script>
 </body>
 </html>

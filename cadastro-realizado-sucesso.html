@@ -18,23 +18,29 @@
 <body>
     <!-- Header -->
     <!-- ___________________________________________________________________________________________________ -->
-  <header class="header-bg">
-    <div class="header container">
-     
-       <a href="./">
-        <img src="./img/logo.jpg" width="200" height="32" alt="FrontEnders">
-      </a>
-
+    <header class="header-bg">
+      <div class="header container">
+         <a href="index.html">
+          <img src="./img/icones/logo.jpg" width="200" height="32" alt="FrontEnders">
+        </a>
       <nav aria-label="primaria">
-        <ul class="header-menu">
-          <li><a href="servicos.html">Serviços</a></li>
-          <li><a href="cadastro.html">Cadastro</a></li>
-          <li><a href="contato.html">Contato</a></li>
-          <li><a href="login.html">Login</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+      <ul class="nav header-menu">
+        <li class="nav-item">
+          <a class="nav-link " href="servicos.html">Serviços</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cadastro.html">Cadastro</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contato.html">Contato</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Login</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+    </header>
   <!-- ___________________________________________________________________________________________________ --> 
 
 
@@ -64,43 +70,44 @@
 
 <!-- Footer -->
     <!-- ___________________________________________________________________________________________________ --> 
-  <footer class="footer-bg">
-    <div class="footer container">
-      <img src="./img/logobaixo.svg" width="200" height="40" alt="Logo FrontEnders">
-      <div class="footer-contato">
-        <h3>Contato</h3>
-        <ul>
-          <li><a href="tel:+551199999999">+55 11 9999-9999</a></li>
-          <li><a href="mailto:contato@frontenders.com">contato@frontenders.com</a></li>
-          <li>Avenida Paulista, 411 - Bela Vista</li>
-          <li>São Paulo - SP</li>
-        </ul>
-        <div class="footer-redes">
-          <a href="./">
-            <img src="./img/redes/instagram.svg" width="32" height="32" alt="Instagram">
-          </a>
-          <a href="./">
-            <img src="./img/redes/facebook.svg" width="32" height="32" alt="Facebook">
-          </a>
-          <a href="./">
-            <img src="./img/redes/youtube.svg" width="32" height="32" alt="Youtube">
-          </a>
-        </div>
-      </div>
-      <div class="footer-informacoes">
-        <h3>Informações</h3>
-        <nav>
+    <footer class="footer-bg">
+      <div class="footer container">
+        <img src="./img/logobaixo.svg" width="200" height="40" alt="Logo FrontEnders" class="img-responsive">
+        <div class="footer-contato">
+          <h3>Contato</h3>
           <ul>
-            <li><a href="#">Serviços</a></li>
-            <li><a href="#">Cadastro</a></li>
-            <li><a href="#">Contato</a></li>
-            <li><a href="#">Termos e Condições</a></li>
+            <li class="nav-item"><a href="tel:+551199999999">+55 11 9999-9999</a></li>
+            <li class="nav-item"><a href="mailto:contato@frontenders.com">contato@frontenders.com</a></li>
+            <li class="nav-item">Avenida Paulista, 411 - Bela Vista</li>
+            <li class="nav-item">São Paulo - SP</li>
           </ul>
-        </nav>
+          <div class="footer-redes">
+            <a href="./">
+              <img src="./img/redes/instagram.png" width="32" height="32" alt="Instagram">
+            </a>
+            <a href="./">
+              <img src="./img/redes/facebook.png" width="32" height="32" alt="Facebook">
+            </a>
+            <a href="./">
+              <img src="./img/redes/youtube.png" width="32" height="32" alt="Youtube">
+            </a>
+          </div>
+        </div>
+        <div class="footer-informacoes">
+          <h3>Informações</h3>
+          <nav>
+            <ul class="nav-flex-column">
+              <li><a href="servicos.html" class="nav-item">Serviços</a></li>
+              <li><a href="cadastro.html" class="nav-item">Cadastro</a></li>
+            <li><a href="contato.html" class="nav-item">Contato</a></li>
+            <li><a href="termos.html" class="nav-item">Termos e Condições</a></li>
+            </ul>
+          </nav>
+        </div>
+        <p class="footer-copy">FrontEnders © Todos os direitos reservados.</p>
       </div>
-      <p class="footer-copy">FrontEnders © Todos os direitos reservados.</p>
-    </div>
-  </footer>
+    </footer>
+    
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
